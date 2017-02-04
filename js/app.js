@@ -1,15 +1,6 @@
 'use strict';
-angular.module('myApp', [
-    'ngAnimate',
-    'ngResource',
-    'ui.router',
-    'ct.ui.router.extras',
-    'ui.bootstrap',
-    'app.components',
-    'app.utils',
-    'app.web'
-])
-    .config(function ($provide, $stateProvider, $urlRouterProvider, $locationProvider, $tooltipProvider, $httpProvider, appConfig) {
+angular.module('tap-ui', [])
+    .config(function ($provide, $stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('gameHall', {
                 url: '/confirmRedirect?type&token',
@@ -20,16 +11,4 @@ angular.module('myApp', [
         $urlRouterProvider.otherwise(function () {
             return '/login';
         });
-
-        // Initialize get if not there
-        if (!$httpProvider.defaults.headers.get) {
-            $httpProvider.defaults.headers.get = {};
-        }
-        // 禁用缓存
-        $httpProvider.defaults.headers.get['Cache-Control'] = 'no-cache';
-        $httpProvider.defaults.headers.get['Pragma'] = 'no-cache';
-
-        $locationProvider.html5Mode(appConfig.html5Mode);
-        $tooltipProvider.setTriggers({'customEvent': 'closeEvent'});
-
     });
