@@ -1,9 +1,19 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
+  "name": "tap-ui",
+  "description": "a base UI library for TapDB",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "test",
+    "assets",
+    "app"
+  ],
+  "main": [],
   "dependencies": {
     "angular": "=1.4.7",
     "angular-animate": "=1.4.7",
