@@ -3,6 +3,10 @@
   "description": "a base UI library for TapDB",
   "version": "0.0.0",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@hub-pt.xindong.com:platform/tap-ui.git"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
