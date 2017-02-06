@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@hub-pt.xindong.com:platform/tap-ui.git"
+    "url": "git@github.com:Evol1213/tap-ui.git"
   },
   "ignore": [
     "**/.*",
